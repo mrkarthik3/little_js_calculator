@@ -26,7 +26,7 @@ buttonPress.addEventListener("click", (event) => {
     if (classes.includes("recipro") || classes.includes("square") || classes.includes("sqrt")) {
       let op = event.target.innerText;
       if (op === "1/x") {
-        const denom = eval(arr.join(""));
+        let denom = eval(arr.join(""));
         result = 1 / denom;
         if (result.countDecimals() > 4) {
           result = result.toFixed(4);
@@ -34,7 +34,7 @@ buttonPress.addEventListener("click", (event) => {
         arr = [result];
       }
       if (op === "x²") {
-        const result = eval(arr.join("") * arr.join(""));
+        let result = eval(arr.join("") * arr.join(""));
         if (result.countDecimals() > 4) {
           result = result.toFixed(4);
         }
