@@ -19,7 +19,16 @@ buttonPress.addEventListener("click", (event) => {
     classes.includes("division")
   ) {
     let current = event.target.innerText;
-    arr.push(current);
+    // Prepending 0 to numbers makes JS behave incorrectly.
+    //  So Prevent that like this
+    if (arr.length == 0 && current == 0) {
+      // do nothing in this case. Dont push to array
+      // just display the clicked 0 and move on...
+      currentDisplay.innerText = 0;
+      return;
+    } else {
+      arr.push(current);
+    }
   }
 
   try {
