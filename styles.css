@@ -1,0 +1,118 @@
+@media screen and (max-width: 500px) {
+  #main-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 15%;
+  }
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 30px;
+  user-select: none;
+}
+
+#heading {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#heading h3 {
+  text-align: center;
+}
+
+#main-container {
+  width: 300px;
+  height: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  border-radius: 5%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #16dbe917;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  box-shadow: 0 18px 16px -6px black;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.recipro,
+.square {
+  font-style: italic;
+}
+
+.digit,
+.operation {
+  width: 22px;
+  height: 22px;
+  padding: 5%;
+  margin: 1%;
+  text-align: center;
+  border: 1px outset rgb(0, 0, 0);
+  border-radius: 50%;
+  background-color: #8fd4e0;
+  box-shadow: -2px -2px 2px 0.5px rgba(145, 144, 144, 0.7), 2px 2px 2px 0.5px rgba(145, 144, 144, 0.7);
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+}
+
+#container .row .display {
+  background: white;
+  height: 70px;
+  width: 70%;
+  border: rgb(0, 0, 0) 1px solid;
+  border-radius: 15px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  padding: 15px;
+  text-align: end;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.digit:hover,
+.operation:hover {
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: cyan(217, 255, 0);
+  box-shadow: inset 0 0 3px #ffffff, -2px -2px 2px 0.5px rgba(0, 0, 0, 0.7), 2px 2px 2px 0.5px rgba(0, 0, 0, 0.7);
+}
+
+.click {
+  background: black;
+  color: white;
+}
+
+div#container:last-child {
+  margin-bottom: 1%;
+}
+
+#container .row .display .current {
+  margin-bottom: 20px;
+}
+#reset-button {
+  margin-top: 30px;
+}
+#reset-button input[type="button"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0px 6px 10px 0px black;
+}
