@@ -34,7 +34,8 @@ buttonPress.addEventListener("click", (event) => {
         arr = [result];
       }
       if (op === "x²") {
-        let result = eval(arr.join("") * arr.join(""));
+        let dig = eval(arr.join(""));
+        let result = dig * dig;
         if (result.countDecimals() > 4) {
           result = result.toFixed(4);
         }
